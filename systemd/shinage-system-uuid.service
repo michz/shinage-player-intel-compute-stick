@@ -1,0 +1,10 @@
+[Unit]
+Description=Get Shinage system uuid
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/fetchSystemUUID.sh
+
+[Install]
+WantedBy=basic.target
