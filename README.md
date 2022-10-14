@@ -22,6 +22,12 @@ https://wiki.debian.org/DebianInstaller/Preseed
 * Reboot
 * Check status with `networkctl status wlp1s0`
 
+### Filesystem optimizations
+
+* Mount root volume with `noatime` and `data=writeback`
+* Disable syslog (?)
+* Disable systemd journal or disable writing of it to real disk
+
 ### Install
 
 
